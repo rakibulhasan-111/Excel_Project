@@ -22,3 +22,5 @@ Route::get('excel', function(){
 });
 
 Route::get('export-user', [\App\Http\Controllers\UserController::class, 'exportUser'])->name('export-user');
+
+Route::post('import-user', [\App\Http\Controllers\UserController::class, 'importUser'])->name('import-user');
